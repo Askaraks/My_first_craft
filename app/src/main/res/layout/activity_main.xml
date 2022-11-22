@@ -9,28 +9,34 @@
     tools:context=".MainActivity">
 
     <EditText
+        android:id="@+id/editText1"
         android:layout_width="270dp"
         android:layout_height="48dp"
         android:hint="password"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="320dp" />
+        app:layout_constraintStart_toStartOf="@id/button1"
+        app:layout_constraintBottom_toTopOf="@id/button1"/>
 
     <EditText
+        android:id="@+id/editText3"
         android:layout_width="270dp"
         android:layout_height="48dp"
         android:hint="Email"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="270dp" />
+        app:layout_constraintStart_toStartOf="@id/editText1"
+        app:layout_constraintBottom_toTopOf="@id/editText1"
+       />
 
     <EditText
+        android:id="@+id/editText2"
         android:layout_width="270dp"
         android:layout_height="48dp"
         android:hint="Username"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="210dp" />
+        app:layout_constraintStart_toStartOf="@id/editText1"
+        app:layout_constraintBottom_toTopOf="@id/editText3"
+
+     />
 
     <Button
         android:id="@+id/button1"
@@ -42,8 +48,10 @@
         android:textColor="#000000"
         android:textSize="24sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="380dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
         android:layout_width="60dp"
